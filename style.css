@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root {color: Skyblue}
+
+* {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif;}
+
+html {font-size: 70%}
+
+body {background: black; color: white; padding-top: 80px}
+
+.bg-video {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.25;
+    z-index: -1;}
+
+body > h1,nav {position: fixed; top: 0; z-index: 10; background: Black}
+
+body > h1 {
+    width: 100%;
+    padding: 15px 5%;
+    font-size: 25px;
+    font-weight: 800;
+    color: Skyblue;}
+
+nav {right: 0; padding: 20px 5%}
+
+nav a {
+    margin-left: 30px;
+    padding-bottom: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+    text-decoration: none;}
+
+nav a:hover {color: Skyblue; border-color: Skyblue}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    padding: 40px 10% 20px;}
+
+.profile-img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid Skyblue;
+    transition: transform 0.3s;}
+
+.profile-img:hover {transform: scale(1.1);}
+
+.intro h1 {font-size: 45px; font-weight: 700; line-height: 1.8;}
+
+.intro h2 {margin-top: 15px; font-size: 20px; font-weight: 400}
+
+.intro-roles {display: inline-block; color: Skyblue;font-weight: 600;}
+
+.social-links, .footer-links {display: flex;flex-wrap: wrap;}
+
+.social-links a,.footer-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;}
+
+.social-links img,.footer-links img {width: 20px; height: 20px;}
+
+.social-links {gap: 15px; margin-top: 25px}
+
+.social-links a {width: 45px; height: 45px; border: 2px solid Skyblue; border-radius: 50%;}
+
+.social-links a:hover {background: Skyblue; box-shadow: 0 0 25px Skyblue; transform: scale(1.15) translateY(-4px)}
+
+#about-me {padding: 30px 5% 50px}
+
+#about-me .container {
+    padding: 30px 30px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.448);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(0, 208, 255, 0.888);
+    border-radius: 20px;}
+#about-me p { font-size: 15px; line-height: 2; color: white; text-wrap: balance;}
+
+#about-me strong {font-size: 30px; color: Skyblue}
+
+.hl {color: Skyblue; font-weight: 600}
+
+.section-title {padding-top: 20px; margin-bottom: 3px; text-align: center}
+
+.section-title h2 {font-size: 30px; font-weight: 700}
+
+.button {
+    padding: 10px 30px;
+    background: black;
+    color: Skyblue;
+    border: 2px solid Skyblue;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.button:hover { background: Skyblue; color: black; box-shadow: 0 0 25px Skyblue;}
+
+.card {
+    max-width: 400px;
+    margin: 0 auto 30px;
+    padding: 25px;
+    background: rgba(20,20,20,.85);
+    border: 1px solid Skyblue;
+    border-radius: 10px;
+    box-shadow: 0 0 25px Black;
+    transition: 0.35s;}
+
+.card:hover {transform: translateY(-6px); box-shadow: 0 0 30px Skyblue}
+
+
+.card h4 {margin-bottom: 25px; font-size: 20px; font-weight: 600}
+
+.card p{margin-bottom:15px;}
+
+#contact {padding: 20px 10% 50px;}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 3rem;
+    background: black;
+    backdrop-filter: blur(6px);
+    border: 2px solid Skyblue;
+    border-radius: 15px;}
+
+.contact-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px 15px;
+    font-size: 15px;
+    color: white;
+    background: #0f0f0f;
+    border: 2px solid #2a2a2a;
+    border-radius: 10px;
+    transition: 0.3s;}
+
+.footer {
+    margin-top: 4rem;
+    padding: 5rem 10% 3rem;
+    text-align: center;
+    background: rgba(5, 5, 5, 0.188);
+    backdrop-filter: blur(6px);
+    border-top: .1rem solid black;}
+
+.footer h2 {margin-bottom: 1rem; font-size: 2.6rem;}
+ 
+.footer p {margin-bottom: 2rem; font-size: 1.5rem; color: white}
+ 
+.footer-links {justify-content: center; gap: 1.2rem; max-width: 84rem; margin: 0 auto}
+ 
+.footer-links a {
+    gap: 1rem;
+    padding: .9rem 1.8rem;
+    font-size: 1.4rem;
+    color: white;
+    background: rgba(255,255,255,.03);
+    border: .15rem solid rgba(255,255,255,.15);
+    border-radius: 4rem;
+    text-decoration: none;}
+ 
+.footer-links a:hover {color: Skyblue; border-color: Skyblue; transform: translateY(-3px); box-shadow: 0 0 18px Skyblue;}
+
+@media (max-width: 800px) {
+    .center {flex-direction: column; gap: 25px; text-align: center}
+    .intro h1 {font-size: 30px}
+    .intro h2 {font-size: 15px}
+    .social-links {justify-content: center}
+    body > h1 {width: auto; font-size: 20px}
+    nav {padding: 15px 5%}
+    nav a {margin-left: 15px; font-size: 10px}
+    .form-row {grid-template-columns: 1fr}
+}
